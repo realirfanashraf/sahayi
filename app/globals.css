@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Light theme */
+  --background: 210 30% 98%; /* very light blueish */
+  --foreground: 222 15% 15%; /* dark text */
+
+  --primary: 222 70% 45%; /* nice blue */
+  --primary-foreground: 0 0% 100%; /* white text on primary */
+  --secondary: 45 93% 50%; /* vibrant yellow-green */
+  --border: 214 32% 91%; /* soft light border */
+  --radius: 0.75rem;
+
+  --gradient-primary: linear-gradient(135deg, hsl(222 70% 45%) 0%, hsl(222 80% 55%) 100%);
+  --gradient-accent: linear-gradient(135deg, hsl(45 93% 50%) 0%, hsl(35 93% 55%) 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: 222 47% 12%; /* dark navy */
+  --foreground: 210 40% 95%; /* almost white text */
+
+  --primary: 222 60% 60%; /* brighter blue for dark mode */
+  --primary-foreground: 210 20% 98%; /* light text on primary */
+  --secondary: 45 95% 60%; /* brighter accent */
+  --border: 220 20% 30%; /* subtle dark border */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-inter);
+  transition: background 0.3s, color 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair);
 }
