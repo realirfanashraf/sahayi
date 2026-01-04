@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,15 +25,17 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">
-                N
-              </span>
+          <Link href="/" className="flex items-center gap-3">
+            <div className="relative h-14 sm:h-16 md:h-18 w-auto">
+              <Image
+                src="https://res.cloudinary.com/dlttm7i3r/image/upload/v1767508313/WhatsApp_Image_2026-01-04_at_11.41.46_AM-removebg-preview_zdr0pf.png"
+                alt="Sahayi Logo"
+                width={220}
+                height={80}
+                className="h-full w-auto object-contain"
+                priority
+              />
             </div>
-            <span className="font-display text-2xl font-bold text-foreground">
-              Nexus
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -52,7 +55,7 @@ const Header = () => {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" size="sm">
+            {/* <Button variant="ghost" size="sm">
               Log In
             </Button>
             <Button
@@ -60,7 +63,7 @@ const Header = () => {
               className="bg-gradient-primary hover:opacity-90 transition-opacity"
             >
               Get Started
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -95,12 +98,12 @@ const Header = () => {
                 </Link>
               ))}
               <div className="flex flex-col gap-2 pt-4">
-                <Button variant="ghost" size="sm">
+                {/* <Button variant="ghost" size="sm">
                   Log In
                 </Button>
                 <Button size="sm" className="bg-gradient-primary">
                   Get Started
-                </Button>
+                </Button> */}
               </div>
             </nav>
           </div>

@@ -22,7 +22,7 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 bg-card rounded-full px-4 py-2 shadow-soft mb-8 animate-fade-up">
             <Sparkles className="w-4 h-4 text-secondary" />
             <span className="text-sm font-medium text-foreground">
-              Trusted by 500+ companies worldwide
+              One Platform. Trusted Services.
             </span>
           </div>
 
@@ -31,8 +31,8 @@ const Hero = () => {
             className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-up"
             style={{ animationDelay: "0.1s" }}
           >
-            Transform Your Business with{" "}
-            <span className="text-gradient">Strategic Innovation</span>
+            All the Services You Need{" "}
+            <span className="text-gradient">One Trusted Destination</span>
           </h1>
 
           {/* Subheadline */}
@@ -40,8 +40,9 @@ const Hero = () => {
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
-            We partner with forward-thinking companies to drive growth, optimize
-            operations, and create lasting impact through tailored solutions.
+            From healthcare and education to home services, events, travel, and
+            daily essentials — we connect you with verified professionals to
+            simplify life, all in one place.
           </p>
 
           {/* CTA Buttons */}
@@ -53,7 +54,7 @@ const Hero = () => {
               size="lg"
               className="bg-gradient-primary hover:opacity-90 transition-opacity group"
             >
-              Start Your Journey
+              Get Started
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
 
@@ -68,10 +69,10 @@ const Hero = () => {
             style={{ animationDelay: "0.4s" }}
           >
             {[
-              { value: "500+", label: "Clients Served" },
-              { value: "98%", label: "Client Satisfaction" },
-              { value: "15+", label: "Years Experience" },
-              { value: "50M+", label: "Revenue Generated" },
+              { value: "100+", label: "Service Categories" },
+              { value: "500+", label: "Happy Customers" },
+              { value: "1K+", label: "Verified Professionals" },
+              { value: "24/7", label: "Support & Assistance" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="font-display text-3xl md:text-4xl font-bold text-foreground">
