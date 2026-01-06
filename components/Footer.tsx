@@ -15,7 +15,7 @@ const Footer = () => {
               <span className="font-display text-2xl font-bold">Nexus</span>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Transforming businesses through innovative solutions and strategic partnerships. Your success is our mission.
+              We help businesses grow through smart solutions and hands-on support. Let’s build something amazing together!
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-primary-foreground/70 hover:text-secondary transition-colors">
@@ -34,10 +34,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-display text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-3">
-              {["Home", "Services", "About Us", "Contact"].map((link) => (
+              {["Home", "Services", "About", "Contact"].map((link) => (
                 <li key={link}>
                   <Link
-                    href={link === "Home" ? "/" : `/${link.toLowerCase().replace(" ", "-")}`}
+                    href={link === "Home" ? "/" : `/${link.toLowerCase()}`}
                     className="text-primary-foreground/70 hover:text-secondary transition-colors text-sm"
                   >
                     {link}
@@ -53,7 +53,6 @@ const Footer = () => {
             <ul className="space-y-3">
               {["Digital Strategy", "Web Development", "Marketing", "Consulting"].map((service) => (
                 <li key={service}>
-                  {/* Keep external href as <a> if needed */}
                   <a
                     href="#"
                     className="text-primary-foreground/70 hover:text-secondary transition-colors text-sm"
@@ -87,7 +86,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © 2025 Nexus. All rights reserved.
+            © 2026 Nexus. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-primary-foreground/50 hover:text-secondary transition-colors text-sm">

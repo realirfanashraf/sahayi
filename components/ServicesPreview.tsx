@@ -1,31 +1,58 @@
-import { Lightbulb, Code, TrendingUp, Users, ArrowRight } from "lucide-react";
+import {
+  HeartPulse,
+  Baby,
+  UserPlus,
+  Stethoscope,
+  CalendarCheck,
+  Users,
+  Sparkles,
+  ArrowRight,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const services = [
   {
-    icon: Lightbulb,
-    title: "Digital Strategy",
+    icon: HeartPulse,
+    title: "Home Care Services",
     description:
-      "Develop comprehensive digital roadmaps that align technology with your business objectives.",
+      "Professional home care support ensuring comfort, safety, and personalized attention for patients at home.",
   },
   {
-    icon: Code,
-    title: "Web Development",
+    icon: Baby,
+    title: "Baby Care",
     description:
-      "Build scalable, high-performance web applications using cutting-edge technologies.",
+      "Trained caregivers providing reliable and compassionate baby care for newborns and infants.",
   },
   {
-    icon: TrendingUp,
-    title: "Growth Marketing",
+    icon: UserPlus,
+    title: "Nurse Visit",
     description:
-      "Drive measurable results through data-driven marketing strategies and campaigns.",
+      "Qualified nurses available for home visits, post-hospital care, and medical assistance.",
+  },
+  {
+    icon: Stethoscope,
+    title: "Health Checkups & Insulin Care",
+    description:
+      "Regular health monitoring, basic checkups, insulin administration, and medication support.",
+  },
+  {
+    icon: CalendarCheck,
+    title: "Event Management",
+    description:
+      "End-to-end event planning and management services for corporate, promotional, and social events.",
   },
   {
     icon: Users,
-    title: "Business Consulting",
+    title: "Promoter & Manpower Services",
     description:
-      "Strategic guidance to optimize operations, reduce costs, and accelerate growth.",
+      "Skilled promoters and manpower solutions for events, marketing campaigns, and business needs.",
+  },
+  {
+    icon: Sparkles,
+    title: "More Services Coming Soon",
+    description:
+      "We are expanding our offerings to serve you better. Stay tuned for new professional services.",
   },
 ];
 
@@ -39,11 +66,11 @@ const ServicesPreview = () => {
             Our Services
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-3 mb-4">
-            What We Do Best
+            What We Deliver
           </h2>
           <p className="text-muted-foreground text-lg">
-            We offer a comprehensive suite of services designed to help your
-            business thrive in the digital age.
+            We provide trusted care services, professional manpower, and event
+            management solutions tailored to your needs.
           </p>
         </div>
 
@@ -72,7 +99,7 @@ const ServicesPreview = () => {
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" asChild className="group">
             <Link href="/services" className="flex items-center justify-center">
-              View All Services
+              Explore Our Services
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>

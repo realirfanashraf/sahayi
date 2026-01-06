@@ -1,35 +1,28 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
-import { Target, Eye, Heart, Award, Users, Globe } from "lucide-react";
-
-const team = [
-  { name: "Sarah Johnson", role: "CEO & Founder", initials: "SJ" },
-  { name: "Michael Chen", role: "CTO", initials: "MC" },
-  { name: "Emily Rodriguez", role: "Head of Strategy", initials: "ER" },
-  { name: "David Kim", role: "Creative Director", initials: "DK" },
-];
+import { Target, Eye, Heart, Users } from "lucide-react";
 
 const values = [
   {
     icon: Target,
-    title: "Excellence",
-    description: "We set high standards and consistently strive to exceed them in everything we do.",
+    title: "Care First",
+    description: "We prioritize the well-being of our clients and ensure every service is delivered with compassion and attention.",
   },
   {
     icon: Heart,
-    title: "Integrity",
-    description: "We build trust through honest communication, ethical practices, and transparency.",
+    title: "Trust & Integrity",
+    description: "We build strong relationships through honesty, transparency, and consistent service quality.",
   },
   {
     icon: Users,
-    title: "Collaboration",
-    description: "We believe the best solutions emerge when diverse perspectives come together.",
+    title: "Professional Team",
+    description: "Our staff are trained, verified, and committed to providing reliable care and manpower services.",
   },
   {
     icon: Eye,
-    title: "Innovation",
-    description: "We embrace change and continuously seek new ways to create value.",
+    title: "Continuous Improvement",
+    description: "We are always learning and improving to deliver the best experience for our clients.",
   },
 ];
 
@@ -44,10 +37,10 @@ const About = () => {
             <div className="max-w-3xl mx-auto text-center">
               <span className="text-secondary font-semibold text-sm uppercase tracking-wider">About Us</span>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mt-3 mb-6">
-                Building the Future of Business
+                Compassionate Care & Reliable Services
               </h1>
               <p className="text-muted-foreground text-lg">
-                For over 15 years, we've been helping companies navigate change, embrace innovation, and achieve sustainable growth.
+                We provide professional care services, event support, and manpower solutions with dedication and responsibility. Our goal is to make life easier, safer, and better for our clients.
               </p>
             </div>
           </div>
@@ -60,26 +53,26 @@ const About = () => {
               <div>
                 <span className="text-secondary font-semibold text-sm uppercase tracking-wider">Our Story</span>
                 <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-3 mb-6">
-                  From Startup to Industry Leader
+                  Starting With a Vision to Serve
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Founded in 2010, Nexus began as a small consulting firm with a big vision: to help businesses harness the power of technology and strategy to achieve extraordinary results.
+                    We are a new service company, founded with a mission to provide trustworthy care, professional manpower, and reliable event support. 
                   </p>
                   <p>
-                    Today, we've grown into a full-service business solutions provider with offices across three continents. Our team of 50+ experts has helped over 500 companies—from ambitious startups to Fortune 500 enterprises—transform their operations and accelerate growth.
+                    Our focus is on building strong relationships with clients, offering personalized solutions, and delivering services with responsibility and professionalism.
                   </p>
                   <p>
-                    What hasn't changed is our commitment to our clients' success. We still approach every engagement with the same curiosity, dedication, and passion that defined us from day one.
+                    Though we are just starting, our team is passionate, trained, and ready to ensure every client experience is safe, caring, and dependable.
                   </p>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { value: "500+", label: "Projects Completed" },
-                  { value: "50+", label: "Team Members" },
-                  { value: "15+", label: "Years Experience" },
-                  { value: "12", label: "Countries Served" },
+                  { value: "100%", label: "Client-Focused" },
+                  { value: "Verified", label: "Professional Staff" },
+                  { value: "Personalized", label: "Service Plans" },
+                  { value: "Reliable", label: "Event & Manpower Support" },
                 ].map((stat) => (
                   <div key={stat.label} className="bg-card rounded-2xl p-8 shadow-soft text-center">
                     <div className="font-display text-4xl font-bold text-foreground">{stat.value}</div>
@@ -101,7 +94,7 @@ const About = () => {
                 </div>
                 <h3 className="font-display text-3xl font-bold text-primary-foreground mb-4">Our Mission</h3>
                 <p className="text-primary-foreground/80 leading-relaxed">
-                  To empower organizations with the strategies, technologies, and insights they need to thrive in an ever-changing world. We measure our success by the success of our clients.
+                  To provide compassionate care, professional manpower, and reliable services that make a positive difference in the lives of our clients.
                 </p>
               </div>
               <div className="bg-card rounded-3xl p-10 shadow-card">
@@ -110,7 +103,7 @@ const About = () => {
                 </div>
                 <h3 className="font-display text-3xl font-bold text-foreground mb-4">Our Vision</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To be the most trusted partner for business transformation globally, known for our expertise, innovation, and unwavering commitment to client outcomes.
+                  To become a trusted name for care services, manpower support, and event assistance, known for reliability, professionalism, and client satisfaction.
                 </p>
               </div>
             </div>
@@ -123,10 +116,10 @@ const About = () => {
             <div className="max-w-2xl mx-auto text-center mb-16">
               <span className="text-secondary font-semibold text-sm uppercase tracking-wider">Our Values</span>
               <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-3 mb-4">
-                What Drives Us
+                What Guides Us
               </h2>
               <p className="text-muted-foreground text-lg">
-                Our values are the foundation of everything we do. They guide our decisions and shape our culture.
+                Our values shape the way we work and define our approach to every client and service.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -137,32 +130,6 @@ const About = () => {
                   </div>
                   <h3 className="font-display text-xl font-semibold text-foreground mb-3">{value.title}</h3>
                   <p className="text-muted-foreground text-sm">{value.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Team */}
-        <section className="py-24 bg-muted">
-          <div className="container mx-auto px-6">
-            <div className="max-w-2xl mx-auto text-center mb-16">
-              <span className="text-secondary font-semibold text-sm uppercase tracking-wider">Our Team</span>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-3 mb-4">
-                Meet the Leadership
-              </h2>
-              <p className="text-muted-foreground text-lg">
-                Our leadership team brings decades of combined experience across industries.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {team.map((member) => (
-                <div key={member.name} className="text-center">
-                  <div className="w-32 h-32 rounded-full bg-gradient-primary flex items-center justify-center mx-auto mb-4">
-                    <span className="text-primary-foreground font-display text-3xl font-bold">{member.initials}</span>
-                  </div>
-                  <h3 className="font-display text-xl font-semibold text-foreground">{member.name}</h3>
-                  <p className="text-muted-foreground text-sm mt-1">{member.role}</p>
                 </div>
               ))}
             </div>

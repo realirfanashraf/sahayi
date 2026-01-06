@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-background overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-float" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" />
         <div
-          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary/5 rounded-full blur-3xl animate-float"
+          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-float"
           style={{ animationDelay: "1s" }}
         />
       </div>
@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-card rounded-full px-4 py-2 shadow-soft mb-8 animate-fade-up">
+          <div className="inline-flex items-center gap-2 rounded-full px-4 py-2 mb-8 bg-white border border-border shadow-sm animate-fade-up">
             <Sparkles className="w-4 h-4 text-secondary" />
             <span className="text-sm font-medium text-foreground">
               One Platform. Trusted Services.
@@ -28,16 +28,16 @@ const Hero = () => {
 
           {/* Headline */}
           <h1
-            className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-up"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-up"
             style={{ animationDelay: "0.1s" }}
           >
             All the Services You Need{" "}
-            <span className="text-gradient">One Trusted Destination</span>
+            <span className="text-primary">One Trusted Destination</span>
           </h1>
 
           {/* Subheadline */}
           <p
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up"
+            className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-10 animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
             From healthcare and education to home services, events, travel, and
@@ -52,7 +52,7 @@ const Hero = () => {
           >
             <Button
               size="lg"
-              className="bg-gradient-primary hover:opacity-90 transition-opacity group"
+              className="bg-primary text-primary-foreground hover:opacity-90 transition group"
             >
               Get Started
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -75,10 +75,10 @@ const Hero = () => {
               { value: "24/7", label: "Support & Assistance" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="font-display text-3xl md:text-4xl font-bold text-foreground">
+                <div className="text-3xl md:text-4xl font-bold text-foreground">
                   {stat.value}
                 </div>
-                <div className="text-sm text-muted-foreground mt-1">
+                <div className="text-sm text-foreground/60 mt-1">
                   {stat.label}
                 </div>
               </div>

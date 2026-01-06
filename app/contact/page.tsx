@@ -13,7 +13,7 @@ const contactInfo = [
     icon: Mail,
     title: "Email Us",
     details: "hello@nexus.com",
-    description: "We typically respond within 24 hours",
+    description: "We usually respond within 24 hours",
   },
   {
     icon: Phone,
@@ -29,7 +29,7 @@ const contactInfo = [
   },
   {
     icon: Clock,
-    title: "Business Hours",
+    title: "Working Hours",
     details: "Monday - Friday",
     description: "9:00 AM - 6:00 PM EST",
   },
@@ -48,7 +48,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "Thank you for reaching out. We'll get back to you within 24 hours.",
+      description: "Thanks for reaching out! We'll get back to you soon.",
     });
     setFormData({ name: "", email: "", company: "", message: "" });
   };
@@ -67,10 +67,10 @@ const Contact = () => {
             <div className="max-w-3xl mx-auto text-center">
               <span className="text-secondary font-semibold text-sm uppercase tracking-wider">Contact Us</span>
               <h1 className="font-display text-5xl md:text-6xl font-bold text-foreground mt-3 mb-6">
-                Let's Start a Conversation
+                We'd Love to Hear From You
               </h1>
               <p className="text-muted-foreground text-lg">
-                Have a question or want to work together? We'd love to hear from you. Reach out and let's discuss how we can help your business grow.
+                Have a question or want to get started? Reach out and let's chat about how we can help.
               </p>
             </div>
           </div>
@@ -83,7 +83,7 @@ const Contact = () => {
               {/* Contact Form */}
               <div className="bg-card rounded-3xl p-10 shadow-card">
                 <h2 className="font-display text-3xl font-bold text-foreground mb-2">Send Us a Message</h2>
-                <p className="text-muted-foreground mb-8">Fill out the form below and we'll get back to you as soon as possible.</p>
+                <p className="text-muted-foreground mb-8">Fill out the form below and we'll get back to you shortly.</p>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -117,7 +117,7 @@ const Contact = () => {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      placeholder="Your Company"
+                      placeholder="Your Company (optional)"
                       className="h-12"
                     />
                   </div>
@@ -142,8 +142,8 @@ const Contact = () => {
               {/* Contact Info */}
               <div className="space-y-8">
                 <div>
-                  <h2 className="font-display text-3xl font-bold text-foreground mb-2">Get in Touch</h2>
-                  <p className="text-muted-foreground">Prefer to reach out directly? Here's how you can contact us.</p>
+                  <h2 className="font-display text-3xl font-bold text-foreground mb-2">Reach Out Directly</h2>
+                  <p className="text-muted-foreground">You can also contact us using the information below.</p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -163,7 +163,7 @@ const Contact = () => {
                 <div className="bg-gradient-primary rounded-3xl p-8 h-64 flex items-center justify-center">
                   <div className="text-center text-primary-foreground">
                     <MapPin className="w-12 h-12 mx-auto mb-4 opacity-80" />
-                    <p className="font-display text-xl font-semibold">New York Office</p>
+                    <p className="font-display text-xl font-semibold">Our Office</p>
                     <p className="opacity-80 text-sm mt-1">123 Business Ave, Suite 100</p>
                   </div>
                 </div>
@@ -172,7 +172,7 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* FAQ Preview */}
+        {/* FAQ Section */}
         <section className="py-24 bg-muted">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto text-center">
@@ -182,9 +182,9 @@ const Contact = () => {
               </h2>
               <div className="space-y-4 text-left mt-12">
                 {[
-                  { q: "What industries do you work with?", a: "We work with clients across all industries, including technology, healthcare, finance, retail, and manufacturing." },
-                  { q: "How long does a typical project take?", a: "Project timelines vary based on scope, but most engagements range from 2-6 months." },
-                  { q: "Do you offer ongoing support?", a: "Yes, we offer retainer-based support packages for clients who need continuous assistance." },
+                  { q: "What services do you offer?", a: "We provide professional care services, event support, and manpower solutions tailored to your needs." },
+                  { q: "How quickly can you respond?", a: "We aim to respond within 24 hours to every inquiry." },
+                  { q: "Are your staff trained and verified?", a: "Yes, all our staff are trained, verified, and dedicated to providing reliable service." },
                 ].map((faq, index) => (
                   <div key={index} className="bg-card rounded-2xl p-6 shadow-soft">
                     <h3 className="font-display text-lg font-semibold text-foreground mb-2">{faq.q}</h3>

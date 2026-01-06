@@ -13,10 +13,12 @@ const CTASection = () => {
 
           <div className="relative z-10 max-w-2xl mx-auto text-center">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-              Ready to Transform Your Business?
+              Need Care or Professional Support?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-10">
-              Let's discuss how we can help you achieve your goals. Book a free consultation with our experts today.
+              Whether you’re looking for home care, baby care, nurse visits, event
+              support, or manpower services, we’re here to help. Reach out and
+              we’ll guide you through the next steps.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button
@@ -25,16 +27,20 @@ const CTASection = () => {
                 asChild
               >
                 <Link href="/contact" className="flex items-center justify-center">
-                  Get in Touch
+                  Contact Us
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
+
               <Button
                 size="lg"
                 variant="outline"
                 className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+                asChild
               >
-                Schedule a Call
+                <Link href="/services">
+                  View Our Services
+                </Link>
               </Button>
             </div>
           </div>
